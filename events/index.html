@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">
+        jQuery Events
+    </h1>
+
+    <div class="buttons-container">
+        <button class="btn-show">
+            Show text
+        </button>
+
+        <button class="btn-hide">
+            Hide text
+        </button>
+    </div>
+
+    <section
+        class="text-container"
+    >   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia dolores et saepe voluptates consequuntur repellat numquam. Alias, reprehenderit natus?
+    </section>
+
+
+    <form
+        class="form" 
+    >
+        <div
+            class="formfield"
+        >
+            <label for="email">Email</label>
+            <input 
+                type="text" 
+                id="email" 
+                name="email"
+                placeholder="Enter your email"
+                required
+                /> <!-- keeping in type text for ease of test-->
+        </div>
+
+        <div
+            class="formfield"
+        >
+            <label for="firstName">First Name</label>
+            <input 
+                type="text" 
+                id="firstName" 
+                name="firstName"
+                placeholder="Enter first name..."
+                required
+                minlength="3"
+            />
+        </div>
+
+        <div
+            class="formfield"
+        >
+            <label for="last_name">Last name</label>
+            <input 
+                type="text" 
+                id="lastName"
+                name="lastName"
+                placeholder="Enter last name"
+                required    
+           />
+        </div>
+        <input 
+            type="submit"
+            class="submit_btn"    
+        >
+    </form>
+</body>
+
+</html>
