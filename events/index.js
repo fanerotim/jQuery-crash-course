@@ -41,7 +41,23 @@ $('.form').submit((e) => {
     const firstName = formData.get('firstName');
     const lastName = formData.get('lastName');
     
-    console.log(email, firstName, lastName);
+
+    $('.form').hide();
+
+    const container = $('<div></div>');
+    const paragraph = $('<h3></h3>');
+    paragraph.text('Thanks for submitting the form!');
+    container.append(paragraph);
+    container.css('margin-top', '4rem');
+    container.css('text-align', 'center');
+    
+    $('body').append(container);
+
+    setTimeout(() => {
+        container.remove();
+        $('.form').show();
+    }, 3000)
+
 })
 
 // add input styles on fucus event
